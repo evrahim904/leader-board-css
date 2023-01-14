@@ -110,3 +110,32 @@ border-radius: 14.6913px;
 .fa-clock,.duration-color{
     color: #FF4A60;
 }
+/* -------------
+media query
+------------- */
+/* mobail device */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player,blog{
+        flex-direction: column;
+    }
+   
+}
+@media only screen and (min-width:688px) and (max-width:990px) {
+    .container{
+        width: 100%;
+    }
+    .players,.blogs, .courses{
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player,blog{
+        flex-direction: column;
+    }
+}
